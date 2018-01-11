@@ -1,0 +1,166 @@
+.container.pad-30 {
+    padding-top: 30px;
+}
+
+.vertical-header {
+    -webkit-transform-origin: left;
+    -webkit-transform: translate(-7%, 505%) rotate(-90deg);
+    z-index: 2;
+    position: absolute;
+    height: auto;
+    font-family: verdana, sans-serif;
+    font-size: 22px;
+    color: #d3d3d3;
+    font-weight: bold;
+}
+
+.h-122 {
+    height: 122px;
+
+}
+
+.h-222 {
+    height: 222px;
+}
+
+.img-res {
+    width: 100%;
+    height: 100%;
+
+}
+
+.large-thumb-text {
+    display: none;
+}
+
+.row {
+    margin-bottom: 15px;
+}
+
+.card-body.xs-pad {
+    padding: 0.63em;
+    background-color: #f1f1f1;
+}
+
+body {
+    font-family: Georgia, Serif;
+    background-color: #f1f1f1;
+}
+
+.card {
+    margin: 0 5px 0 5px;
+    border: 1px solid rgba(0, 0, 0, 0) !important;
+}
+
+.card-title {
+    font-size: 1.0625rem;
+}
+
+.card-subtitle {
+    font-size: 0.875rem
+}
+
+.card-subtitle span {
+    font-weight: bold;
+}
+
+.card-text {
+    font-size: 0.875rem;
+    font-style: italic;
+}
+
+/* Responsiveness */
+/*No dimensions for res 1920 container was given so assumed it was same as 1000 res*/
+@media (min-width: 1200px) {
+    .container {
+        max-width: 970px;
+
+    }
+}
+
+@media (max-width: 1000px) {
+    .container {
+        max-width: 970px;
+
+    }
+}
+
+@media (max-width: 780px) {
+
+    .col-md-3.res,
+    .col-md-6.res {
+        flex: 0 0 33.33%;
+        max-width: 33.33%;
+    }
+
+    .container {
+        max-width: 750px;
+
+    }
+
+    .h-122,
+    .h-222 {
+        height: 100%;
+    }
+
+    .large-thumb-text {
+        display: block;
+    }
+}
+
+@media (max-width: 510px) {
+
+    .col-md-3.res,
+    .col-md-6.res {
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+
+    .container {
+        max-width: 480px;
+    }
+
+    .h-122,
+    .h-222 {
+        height: 100%;
+    }
+
+    .large-thumb-text {
+        display: block;
+    }
+
+    .row.no-gutters {
+        flex-wrap: wrap;
+    }
+}
+
+@media (max-width: 320px) {
+
+    .card-text {
+        display: none;
+    }
+
+    .container {
+        max-width: 330px;
+    }
+
+    .vertical-header {
+        -webkit-transform-origin: 0;
+        -webkit-transform: translate(0%, 0vh) rotate(0deg);
+        position: relative;
+        text-align: center;
+        margin-bottom: 25px;
+    }
+
+    .col-md-3.res,
+    .col-md-6.res {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+}
+
+
+
+
+
+
